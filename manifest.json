@@ -1,0 +1,57 @@
+{
+    "name": "Chamaaaa um contato no WhatsApp",
+    "short_name": "Rafael Estevão",
+    "theme_color": "#005f97",
+    "background_color": "#005f97",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/?utm_source=homescreen",
+    "lang": "pt-BR",
+    "orientation": "any",
+    "icons": [
+      {
+        "src": "whatsapp.png",
+        "sizes": "48x48",
+        "type": "image/png"
+      },
+      {
+        "src": "whatsapp.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      },
+      {
+        "src": "whatsapp.png",
+        "sizes": "96x96",
+        "type": "image/png"
+      },
+      {
+        "src": "whatsapp.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "whatsapp.png",
+        "sizes": "168x168",
+        "type": "image/png"
+      },
+      {
+        "src": "whatsapp.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "whatsapp.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "related_applications": [
+      {
+          "platform": "web"
+      },
+      {
+          "platform": "play",
+          "url": "https://play.google.com/store/apps/details?id=com.whatsapp"
+      }
+  ]
+  }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="description" content="">
+	<meta name="Chamar contato no WhatsApp" content="">
+	<title>Chamar contato no WhatsApp</title>
+	<!-- Bootstrap Core CSS -->
+	<!-- <link href="https://www.rafaelestevao.com.br/css/bootstrap.min.css" rel="stylesheet"> -->
+	<!-- Custom Fonts -->
+	<link rel="icon" href="favicon-64x64.ico">
+	<link rel="manifest" href="/manifest.json">
+
+	<script type="text/javascript">
+		function chamar() {
+			var numero = document.getElementById("numero");
+			document.location.href = 'https://wa.me/' + numero.value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^\w\-]+/g, '').replace('-', '');
+		}
+	</script>
+
+	<style>
+		.btn-call {
+			padding: 20px;
+			width: 30%;
+			background-color: rgb(33, 216, 33);
+			color: black;
+			border: none;
+		}
+		.number {
+			width: 30%;
+			height: 50px;
+			text-align: center;
+		}
+		h3 {
+			font-size: 22px;
+		}
+		p {
+			font-size: 18px;
+		}
+		strong {
+			color: orangered;
+		}
+
+		@media only screen and (max-width: 920px) {
+			.btn-call {
+				width: 100%;
+			}
+			.number {
+				width: -webkit-fill-available;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="panel panel-success" style="text-align: center;">
+		<div class="panel-heading">
+			<h3 class="panel-title">
+				Chamar um contato no WhatsApp
+			</h3>
+		</div>
+		<div class="panel-body">
+			<p>Informe abaixo o <strong>Código do País</strong> + <strong>DDD</strong> + <strong>número</strong>.</p>
+			<p>Clicando no botão "Enviar mensagem no WhatsApp", você será redirecionado para o WhatsApp com a conversa
+				iniciada.</p>
+			<p>Assim, você não precisa adicionar o contato para iniciar uma nova conversa.</p>
+		</div>
+	</div>
+
+	<div style="width: 100%; height: 100%;text-align: center;padding-top: 15px;">
+		<div class="form-group">
+			<input id="numero" inputmode="numeric" type="text" class="number" placeholder="Informe o número com DDD">
+		</div>
+		<br>
+		<button type="button" class="btn-call" id="chamar" onclick="chamar();">
+			<b>Enviar mensagem no WhatsApp</b>
+		</button>
+
+	</div>
+</body>
+
+</html>
